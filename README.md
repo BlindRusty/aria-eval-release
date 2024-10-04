@@ -35,8 +35,6 @@ The underlying hardware used for this experiment evaluation is as follow :
             VRAM - 16 GB 
             STORAGE - 1 TB SSD
 
-
-
 ### Deployed System Configuration 
 
     JOHNAIC TYPE : BLUE [ Intel AI Stack ]
@@ -47,11 +45,27 @@ The underlying hardware used for this experiment evaluation is as follow :
         VRAM - 16 GB 
         STORAGE - 1 TB SSD
 
-### System Environment
+## Software Implementation
+
+This section explains the system software environment and application details.
+
+### System Software Environment
 
     OS : Linux
     Distribution : KDE neon
     Type : Debian
+
+### Access Protocol and Security 
+
+The API is accessed securely over HTTPS and uses cloudflare for controlling web traffic.
+
+    CloudFlare Tunnel is installed and served through JOHNAIC-3
+
+### Application Deployment
+
+The application is deployed through containerization
+
+    Containerization : Docker
 
 ### Model Details
 
@@ -63,15 +77,13 @@ The model details are available in the model file in the github repo.
 
 The model is being served using REST API.
 
-    REST : FAST API server hosted on JOHNAIC-3
+    REST Services : FAST API server hosted on JOHNAIC-3
+
+    LLM Framework : OLLAMA
 
     FAST API server internally calls ollama services hosted on JOHNAIC-3
 
-### Access Protocol and Security 
 
-The API is accessed securely over HTTPS and uses cloudflare for controlling web traffic.
-
-    CloudFlare Tunnel is installed and served through JOHNAIC-3
 
 ## Submission for NIST-ARIA evaluation across 3 scenarios
 
@@ -101,9 +113,11 @@ Implemented as per AI Risk Management Framework: Generative Artificial Intellige
         1. Allergy Controls 
         2. Dietary Restrictions
         3. Dietary Preferences
-        4. Indirect restrcitions from Medicines and Illnesses
+        4. Indirect restrictions from Medicines and Illnesses
         5. Calories Calculations
-        6. Focused Context for Meal Planning usecase only. 
+        6. Focused Context for Meal Planning usecase only
+        7. No Harm or Self Harming Food
+        8. Non Edibles Restrictions
 
 #### This is the section for Additional Information Retrieval for Meal Planning 
 

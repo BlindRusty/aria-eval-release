@@ -14,17 +14,64 @@ The underlying hardware used for this experiment evaluation is as follow :
 ### System Name and Provider 
 
     System Name : JOHNAIC-3
-    System Provider : VON-NEUMANN AI
+    System Provider : VON-NEUMANN AI (https://von-neumann.ai/index.html)
     System Provider Location : Bengaluru, Karnataka
+    System Provider Type : AI Local Servers & Micro Data Centres
+    System Provider GPU Stacks : [JOHNAIC-BLUE , JOHNAIC-GREEN]
+        
+        JOHNAIC TYPE : BLUE [ Intel AI Stack ]
 
-### System Configuration 
+            CPU - Intel i5 12400 
+            GPU - Intel Arc A770 
+            RAM - 64 GB 
+            VRAM - 16 GB 
+            STORAGE - 1 TB SSD
+        
+        JOHNAIC TYPE : GREEN [ NVIDIA Stack ]
 
-    CPU - Intel i5 12400 
-    GPU - Intel Arc A770 
-    RAM - 64 GB 
-    VRAM - 16 GB 
-    STORAGE - 1 TB SSD
+            CPU - Intel i5 12400 
+            GPU - Nvidia 4070 Ti Super
+            RAM - 64 GB 
+            VRAM - 16 GB 
+            STORAGE - 1 TB SSD
 
+
+
+### Deployed System Configuration 
+
+    JOHNAIC TYPE : BLUE [ Intel AI Stack ]
+
+        CPU - Intel i5 12400 
+        GPU - Intel Arc A770 
+        RAM - 64 GB 
+        VRAM - 16 GB 
+        STORAGE - 1 TB SSD
+
+### System Environment
+
+    OS : Linux
+    Distribution : KDE neon
+    Type : Debian
+
+### Model Details
+
+The model details are available in the model file in the github repo.
+
+    .modelfile
+
+### Model Serving
+
+The model is being served using REST API.
+
+    REST : FAST API server hosted on JOHNAIC-3
+
+    FAST API server internally calls ollama services hosted on JOHNAIC-3
+
+### Access Protocol and Security 
+
+The API is accessed securely over HTTPS and uses cloudflare for controlling web traffic.
+
+    CloudFlare Tunnel is installed and served through JOHNAIC-3
 
 ## Submission for NIST-ARIA evaluation across 3 scenarios
 

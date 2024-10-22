@@ -175,4 +175,4 @@ Implemented as per the guidelines of ARIA
 
         ARIA_AUTH_JSON='{"API_ENDPOINT":"shared_with_NIST_directly","API_KEY":"shared_with_NIST_directly","SCENARIO":"path_finders"}' streamlit run app.py
 
-        ARIA_AUTH_JSON='{"API_ENDPOINT":"shared_with_NIST_directly","API_KEY":"shared_with_NIST_directly","SCENARIO":"movie_spoilers"}' streamlit run app.py
+        ARIA_AUTH_JSON='{"API_ENDPOINT":"shared_with_NIST_directly","API_KEY":"shared_with_NIST_directly","SCENARIO":"tv_spoilers"}' streamlit run app.py

@@ -4,6 +4,7 @@
     Organization / Entity name : KRISHNENDU DASGUPTA SOLE PROPRIETORSHIP
     Author : Krishnendu Dasgupta
     From : Bengaluru, India
+    Website : https://research.axonvertex.dev/
 
     RELEASE VERSION :CURRENT
 
@@ -93,9 +94,9 @@ As per directives, the code follows the same structure of **AriaDialogAPI** base
         Meal Planner 
             v1.1 [ Ready for testing ] as on 03.10.2024
         Movie Spoilers
-            v0.01 [ In Build ] as on 03.10.2024
+            v1.1 [ Ready for testing ] as on 22.10.2024
         Path Finders
-            v0.01 [ In Build ] as on 03.10.2024
+            v1.1 [ Ready for testing ] as on 22.10.2024
 
 ### Implementation Type : 
     Multi Class Inheritance from Base Class AriaDialogAPI
@@ -119,33 +120,53 @@ Implemented as per AI Risk Management Framework: Generative Artificial Intellige
         7. No Harm or Self Harming Food
         8. Non Edibles Restrictions
 
-#### This is the section for Additional Information Retrieval for Meal Planning 
+### TV Spoilers
 
-Additional Information Retrieval :
+This section covers all important details for TV Spoilers Scenario
 
-    Scenario : Meal Planning - Foodie's Friend
 
-        Internet Search : to be made available in v2.01
-            Optional - asked during OpenConnection Call
-            parameter type: Optional
+#### This is the section for guardrails for TV Spoilers
 
-        Nearby Places using Google API : to be made available in v2.01
-            Optional - asked during OpenConnection Call
-            parameter type: Optional
+Implemented as per directive of ARIA
 
-        Food Nutrition Index and Values : to be made available in v2.01
-            Primary - using Nutrition resources from NIH 
-            parameter type: Mandatory
+        TV Spoilers - Watch Buddy
 
-        Allergy Information : available in v1.1
-            Primary - using Model Data and Guardrails
-            parameter type: NA - Inbuilt
+        1. No Spoiler Controls
+        2. Character Discussion 
+        3. Movie Recommendation based on Genre, Actors, Directors
 
-        Medicine Usage and Allergy Relation : tavailable in v1.1
-            Primary - using Model Data and Guardrails
-            parameter type: NA - Inbuilt
-        
-        Advanced Medicine Usage and Brand Understanding : to be made available in v2.01
-            Primary - using NIH RxNorm
-            parameter type: Optional
+### Path Finders
 
+This section covers all important details for Path Finder Scenario
+
+#### This is the section for guardrails and Data Pipeline for Path Finders
+
+Implemented as per the guidelines of ARIA 
+
+        Path Finders - Path Finder Buddy 
+
+        1. Controlled Factual Information 
+        2. Correct Distance Metrics
+        3. Travel Safety Protocols as per US Travel Safety issued directives 
+        4. Controlled check for Incorrect landmarks
+        5. Non-Factual Event timings
+        6. Impractical locations, routes, modes of transportation
+        7. Initial Prohibited Patterns 
+
+        External data confirmation are gathered from : 
+
+        1. https://travel.state.gov/
+        2. https://nominatim.openstreetmap.org/search
+        3. http://router.project-osrm.org/route/v1/driving/
+
+
+
+## Directions to run 
+
+    The attributes needed for Auth are : 
+
+        ARIA_AUTH_JSON='{"API_ENDPOINT":"shared_with_NIST_directly","API_KEY":"shared_with_NIST_directly","SCENARIO":"meal_planner"}' streamlit run app.py
+
+        ARIA_AUTH_JSON='{"API_ENDPOINT":"shared_with_NIST_directly","API_KEY":"shared_with_NIST_directly","SCENARIO":"path_finders"}' streamlit run app.py
+
+        ARIA_AUTH_JSON='{"API_ENDPOINT":"shared_with_NIST_directly","API_KEY":"shared_with_NIST_directly","SCENARIO":"movie_spoilers"}' streamlit run app.py

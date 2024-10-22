@@ -439,7 +439,7 @@ class Team_ARIADialogAPI(AriaDialogAPI):
         if self.scenario_instance is None or current_class_name != scenario.replace('_', '').lower():
             if scenario == "meal_planner":
                 self.scenario_instance = MealPlanner()
-            elif scenario == "movie_spoilers":
+            elif scenario == "tv_spoilers":
                 self.scenario_instance = TVSpoilers()
             elif scenario == "path_finders":
                 self.scenario_instance = PathFinders()

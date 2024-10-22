@@ -6,7 +6,8 @@
     From : Bengaluru, India
     Website : https://research.axonvertex.dev/
 
-    RELEASE VERSION :CURRENT
+    RELEASE VERSION :CURRENT 
+    RELEASE TAG : release_2210_v3_aria 
 
 ## Hardware Description
 
@@ -160,6 +161,9 @@ Implemented as per the guidelines of ARIA
         1. https://travel.state.gov/
         2. https://nominatim.openstreetmap.org/search
         3. http://router.project-osrm.org/route/v1/driving/
+
+
+        There is a list of travel guidelines as travel state gov in a json list. [ travel_advisory_data ]
 
 
 

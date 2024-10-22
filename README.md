@@ -101,6 +101,8 @@ As per directives, the code follows the same structure of **AriaDialogAPI** base
 ### Implementation Type : 
     Multi Class Inheritance from Base Class AriaDialogAPI
 
+    The code also uses Spacy for text processing. 
+
 ### Meal Planning 
 
 This section covers all important details for Meal Planning Scenario.
